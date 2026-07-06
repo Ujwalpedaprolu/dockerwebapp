@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: ujjvalpedaprolu/docker-project:dbimage
+   image: ujjvalpedaprolu/k8s:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: ujjvalpedaprolu/docker-project:appimage
+   image: ujjvalpedaprolu/k8s:appimage
    ports:
      - "1111:8080"
    depends_on:
